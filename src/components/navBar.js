@@ -22,7 +22,7 @@ class NavBar extends Component {
             <Nav className='mr-auto'>
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/recipes'>Recipes</NavLink>
-              <NavLink to='/mealplans'>Mealplans</NavLink>
+              {/* <NavLink to='/mealplans'>Mealplans</NavLink> */}
               <NavLink to='/guides'>Guides</NavLink>
               {/* <Nav.Link href='#link'>Grocery Lists</Nav.Link>
               <Nav.Link href='#link'>My Recipes</Nav.Link> */}

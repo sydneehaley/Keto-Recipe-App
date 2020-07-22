@@ -22,6 +22,7 @@ import soups from './images/soups.jpg';
 import veggies from './images/veggies.jpg';
 import casseroles from './images/casseroles.jpg';
 import vanillaicecream from './images/vanillaicecream.jpg';
+import summerhomepage from './images/summerhomepage.jpg';
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -128,12 +129,12 @@ class Home extends Component {
         <div className='home__spotlight--container'>
           {/* <b>Spotlight</b> <br /> */}
           <h1>Spotlight</h1>
-          <img src={vanillaicecream} />
+          <img src={summerhomepage} />
           <div className='home__spotlight--container-hr'></div>
           <div className='home__spotlight--main'>
             <SummerRecipes summerSpotlight={this.state.summerSpotlight} />
             <div className='home__spotlight--etc--title'>
-              <b>Recipes</b>
+              {/* <b>Recipes</b> */}
               <div className='home__spotlight--etc'>
                 <SummerRecipesC2
                   summerSpotlight2={this.state.summerSpotlight2}
@@ -281,14 +282,12 @@ const MealPlanSection = () => {
       <div className='home__mealplan--container'>
         <div className='home__mealplan--splashimg'>.</div>
         <div className='home__mealplan--info'>
-          <h1>Generate A Mealplan</h1>
+          <h1>Recipe Title</h1>
           <p>
             An easy way to maintain your keto diet. The Mealplan generator
             prepares 3 meals a day.{' '}
           </p>
-          <span>
-            <Button variant='dark'>Learn more</Button>
-          </span>
+          <span>View Recipe</span>
         </div>
       </div>
     </div>

@@ -294,6 +294,7 @@ const MealplansMonSection = ({ monday }) => {
 };
 
 const MealplansTuesSection = ({ tuesday }) => {
+  console.log(tuesday);
   const title = tuesday.slice(0, 1);
   const breakfast = tuesday.slice(0, 1);
   const lunch = tuesday.slice(1, 2);

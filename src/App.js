@@ -25,7 +25,7 @@ function App() {
           <Route path='/test2' component={Home} />
           <Route path='/recipes' component={Recipes} />
           <Route path='/meals' component={Meals} />
-          <Route path='/mealplans' component={Mealplans} />
+          {/* <Route path='/mealplans' component={Mealplans} /> */}
           <Route path='/guides' component={Guides} />
           <Route path='/breakfast' component={Breakfast} />
           <Route path='/meal/:id' component={recipeView} />
