@@ -22,7 +22,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route path='/' component={Home} exact />
-          <Route path='/test2' component={Home} />
+          <Route path='/keto-recipe-app' component={Home} />
           <Route path='/recipes' component={Recipes} />
           <Route path='/meals' component={Meals} />
           {/* <Route path='/mealplans' component={Mealplans} /> */}
