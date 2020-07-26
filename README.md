@@ -7,7 +7,7 @@ This is a recipe app using the spoonacular API that provides curated ketogenic d
 This project is being built using:
 
 - API provided by spoonacular.com
-- free-usable images from unsplash.com
+- free-usable images from unsplash.com : https://unsplash.com/collections/11521778/keto-recipe-app
 - React.js Create React App
 - React Bootstrap
 - React FontAwesome
