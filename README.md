@@ -14,3 +14,10 @@ This project is being built using:
 - Adobe TypeKit
 
 This project is currently in progress, and can be viewed here: https://sydneehaley.github.io/Keto-Recipe-App/
+
+UPDATES:
+
+07/25/2020 
+
+Project Stage: UI Design 
+I am currently working on this project in Adobe XD. I am designing the user interface for this app. 
