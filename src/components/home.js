@@ -26,17 +26,15 @@ import summerhomepage from './images/summerhomepage.jpg';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-const NYTIMES_API_KEY = 'r1stUqQPiCCOJxIG5zSeLP44F6JYmHX1';
-const SPOONACULAR_API_KEY = '245c1de7e3dd44bcaad22cb705677483';
-const summerRecipesSpotlight = `https://api.spoonacular.com/recipes/extract?url=https://lifemadesweeter.com/no-churn-vanilla-ice-cream/&apiKey=${SPOONACULAR_API_KEY}`;
-const summerRecipesSpotlight2 = `https://api.spoonacular.com/recipes/extract?url=https://slimfast.com/recipes/keto-cheesecake-dip-and-fruit/&apiKey=${SPOONACULAR_API_KEY}`;
-const summerRecipesSpotlight3 = `https://api.spoonacular.com/recipes/extract?url=https://www.theroastedroot.net/vegan-key-lime-popsicles-paleo-a-keto-option/&apiKey=${SPOONACULAR_API_KEY}`;
+const summerRecipesSpotlight = `https://api.spoonacular.com/recipes/extract?url=https://lifemadesweeter.com/no-churn-vanilla-ice-cream/&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`;
+const summerRecipesSpotlight2 = `https://api.spoonacular.com/recipes/extract?url=https://slimfast.com/recipes/keto-cheesecake-dip-and-fruit/&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`;
+const summerRecipesSpotlight3 = `https://api.spoonacular.com/recipes/extract?url=https://www.theroastedroot.net/vegan-key-lime-popsicles-paleo-a-keto-option/&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`;
 
-const videosUrl = `https://api.spoonacular.com/food/videos/search?diet=keto&apiKey=${SPOONACULAR_API_KEY}&query=keto&number=10`;
-const aFavoriteUrl = `https://api.spoonacular.com/recipes/extract?url=http://www.pineappleandcoconut.com/recipes/smoked-salmon-baked-eggs/&apiKey=${SPOONACULAR_API_KEY}`;
-const newsUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=keto diet&api-key=${NYTIMES_API_KEY}`;
-const RecipesWereEatingArea = `https://api.spoonacular.com/recipes/informationBulk?ids=879067,827,152742,1177007,1184115&apiKey=${SPOONACULAR_API_KEY}`;
-const ProductsUrl = `https://api.spoonacular.com/recipes/informationBulk?ids=577421,16342,464724,9416,10742,572249,87974,469230,560829,474396,548173,1043929&apiKey=${SPOONACULAR_API_KEY}`;
+const videosUrl = `https://api.spoonacular.com/food/videos/search?diet=keto&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}&query=keto&number=10`;
+const aFavoriteUrl = `https://api.spoonacular.com/recipes/extract?url=http://www.pineappleandcoconut.com/recipes/smoked-salmon-baked-eggs/&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`;
+// const newsUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=keto diet&api-key=${NYTIMES_API_KEY}`;
+const RecipesWereEatingArea = `https://api.spoonacular.com/recipes/informationBulk?ids=879067,827,152742,1177007,1184115&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`;
+const ProductsUrl = `https://api.spoonacular.com/recipes/informationBulk?ids=577421,16342,464724,9416,10742,572249,87974,469230,560829,474396,548173,1043929&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`;
 
 class Home extends Component {
   state = {
