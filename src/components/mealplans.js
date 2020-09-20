@@ -36,7 +36,7 @@ class Mealplan extends Component {
     const mealplanCalories = e.target.elements.mealplancalories.value;
     const mealplanAllergies = e.target.elements.mealplanallergies.value;
 
-    const mealplansUrl = `https://api.spoonacular.com/mealplanner/generate?timeFrame=week&apiKey=245c1de7e3dd44bcaad22cb705677483&diet=keto&targetCalories=${mealplanCalories}&exclude=${mealplanAllergies}`;
+    const mealplansUrl = `https://api.spoonacular.com/mealplanner/generate?timeFrame=week&${process.env.REACT_APP_SPOONACULAR_API_KEY}&diet=keto&targetCalories=${mealplanCalories}&exclude=${mealplanAllergies}`;
 
     const request = await fetch(mealplansUrl);
     const res = await request.json();

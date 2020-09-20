@@ -17,7 +17,7 @@ import Image from 'react-bootstrap/Image';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const meal_breakfast_url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=245c1de7e3dd44bcaad22cb705677483&diet=keto&type=breakfast&number=100&maxCarbs=10&maxSugar=6`;
+const meal_breakfast_url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}&diet=keto&type=breakfast&number=100&maxCarbs=10&maxSugar=6`;
 
 class Recipes extends Component {
   state = {
